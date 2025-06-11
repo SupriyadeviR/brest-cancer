@@ -1,11 +1,9 @@
-# app.py
 from flask import Flask, render_template, request
 import joblib
 import numpy as np
 
 app = Flask(__name__)
 
-# Load model, scaler, and feature names
 model = joblib.load("model.pkl")
 scaler = joblib.load("scaler.pkl")
 features = joblib.load("features.pkl")
